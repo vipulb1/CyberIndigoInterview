@@ -54,8 +54,16 @@ class HomeViewModel(application: Application) : AndroidViewModel(application), C
     private fun filterData(query: String) {
         progressDialog?.value =true
         searchUser.clear()
-        searchUser = userList.filter {it -> it!!.first_name.contains(query) ||  it.last_name.contains(
-            query) || it.email.contains(query)} as ArrayList<UsersData.UserInfo?>
+
+        userList.forEach { it ->
+            if (it!!.first_name.contains(query) ||
+                it.last_name.contains(query) || it.email.contains(query)
+            ) {
+                searchUser.add(it)
+            }
+        }
+        /*searchUser = userList.filter {it -> it!!.first_name.contains(query) ||  it.last_name.contains(
+            query) || it.email.contains(query)} as ArrayList<UsersData.UserInfo?>*/
         _userLiveData.postValue(searchUser)
     }
 
