@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CyberIndigo Interview</string>
+    <string name="loginimage">LogInImage</string>
+    <string name="enter_username">Enter Username/Email-Id</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="log_in">Log In</string>
+    <string name="search">Search</string>
+    <string name="location">Location</string>
+    <string name="log_out">Log Out</string>
+    <string name="google_maps_key">AIzaSyCDLciwWA8V9A2VibhRKZ40xN0yjvzXTbI</string>
+    <string name="your_current_location_co_ordinates_are">YOUR CURRENT LOCATION CO-ORDINATES ARE</string>
+</resources>
